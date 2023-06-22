@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login-row {
+  display: flex;
+}
+
+.column {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 40vw;
+  background-color: black;
+
+  .title {
+    color: #fff;
+    font-size: 55px;
+  }
+}
+
+.right {
+  width: 60vw;
+  background-color: rgb(245, 245, 245);
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 1rem;
+    width: 60%;
+    height: 75%;
+
+    .top {
+      font-size: 1.5rem;
+      .heading {
+        font-weight: 900;
+        font-weight: bold;
+      }
+      .sub-heading {
+        font-size: 11px;
+      }
+    }
+
+    .middle {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bottom {
+      width: 100%;
+
+      > form {
+        background-color: #fff;
+        border-radius: 20px;
+        width: 100%;
+        height: 90%;
+        padding: 0.5rem;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+
+        > div {
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem;
+          width: 100%;
+
+          > input {
+            width: 100%;
+            padding: 0.7rem;
+            margin-top: 0.5rem;
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            outline: none;
+            border: none;
+          }
+
+          > p {
+            color: rgb(135, 152, 235);
+          }
+
+          > button {
+            align-self: center;
+            margin-top: 0.5rem;
+            width: 100%;
+            padding: 0.5rem;
+            background-color: black;
+            color: #fff;
+            border-radius: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      > div {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+
+        .one {
+          color: rgb(160, 160, 160);
+          margin-right: 5px;
+        }
+        .two {
+          color: rgb(135, 152, 235);
+        }
+      }
+    }
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other. */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .login-row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100vw;
+  }
+  .left {
+    height: 40vh;
+  }
+  .right {
+    height: 60vh;
+  }
+  .right .main {
+    height: 100%;
+    width: 100%;
+  }
+}

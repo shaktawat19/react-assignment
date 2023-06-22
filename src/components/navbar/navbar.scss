@@ -1,0 +1,47 @@
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .heading {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+
+        > input {
+          padding: 0.4rem;
+          border: none;
+          outline: none;
+          color: lightgray;
+          border-radius: 10px;
+        }
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

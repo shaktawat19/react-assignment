@@ -1,0 +1,48 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 95vh;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+
+  .top {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+
+  .bottom {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+    ul {
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+        padding: 1rem;
+
+        span {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
